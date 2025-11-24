@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>H. Arda Karabacak</title>
+  <meta name="title" content="@frudotz">
+  <meta name="author" content="@frudotz">
+  <meta name="theme-color" content="#000000">
+  <meta name="background-color" content="#FFFFFF">
+  <meta name="keywords" content="Frudotz, H. Arda Karabacak, Grapic Designer, Designer, Front-End Developer, Developer">
+  <meta name="description" content="Hi there! This is H. Arda Karabacak speaking, aka frudotz. This is my personal portfolio website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frudotz.com/">
+  <meta property="og:title" content="@frudotz">
+  <meta property="og:description" content="Hi there! This is H. Arda Karabacak speaking, aka frudotz. This is my personal portfolio website.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/frudotz/frudotz.github.io/main/frudotz.png">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://frudotz.com/">
+  <meta property="twitter:title" content="@frudotz">
+  <meta property="twitter:description" content="Hi there! This is H. Arda Karabacak speaking, aka frudotz. This is my personal portfolio website.">
+  <meta property="twitter:image:src" content="https://raw.githubusercontent.com/frudotz/frudotz.github.io/main/frudotz.png">
+  <link rel="icon" href="https://raw.githubusercontent.com/frudotz/frudotz.github.io/main/favicon.ico">
+  <!--<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>-->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="preload" href="https://avatars.githubusercontent.com/u/46935560" as="image">
+  <link rel="me" href="https://mastodon.social/@frudotz"> 
+  <style>
+:root{ --bg:#071018; --card:rgba(20,209,200,0.08); --muted:#98a0a6; --accent:#14d1c8; --accent-2:#0fb9aa; --radius:14px; --maxw:1220px; --ui:15px/1.5 'Inter', system-ui, sans-serif; }
+html, body{ overflow-x: hidden !important;min-height:100vh !important;background-attachment: fixed !important;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{ transition:transform .3s ease; background:linear-gradient(180deg,#0b0f12,var(--bg)); color:#e7f3f4; font:var(--ui); position:relative; overflow-x:hidden;overflow-y: hidden;}
+.blob{ position:absolute; border-radius:50%; filter:blur(140px); opacity:0.28; z-index:-1; transform:translate3d(0,0,0); }
+.blob1{width:740px;height:740px;background:var(--accent);top:-250px;left:-200px}
+.blob2{width:620px;height:620px;background:var(--accent-2);bottom:-200px;right:-260px}
+.blob3{width:500px;height:500px;background:linear-gradient(135deg,var(--accent),var(--accent-2));top:26%;right:12%}
+.wrap{ max-width:var(--maxw); margin:36px auto; padding:0 28px; }
+header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:26px; }
+.logo{ display:flex; gap:12px; align-items:center; }
+.mark{ width:54px; height:54px; border-radius:12px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex; align-items:center; justify-content:center; font-weight:800; color:#041617; font-size:22px; }
+nav{ display:flex; gap:18px; }
+nav a{ color:var(--muted); text-decoration:none; padding:6px 8px; border-radius:8px; transition:.2s; }
+nav a:hover{ background:var(--card); }
+.top{ display:grid; grid-template-columns:minmax(0,1.95fr) minmax(0,1fr); align-items:stretch; }
+.card{ background:var(--card); border-radius:var(--radius); padding:24px; border:1px solid var(--card); backdrop-filter:blur(10px); }
+.profile{ display:flex; align-items:flex-start; }
+.pfp{ width:140px; height:140px; border-radius:14px; object-fit:cover; border:2px solid var(--card); }
+.personal h2{ margin-bottom:6px; font-size:22px; }
+.personal .lead{ color:var(--muted); margin-bottom:10px; }
+.meta{ font-size:14px; color:var(--muted); }
+.social-row{ display:flex; align-items:center; gap:8px; margin-top:16px; flex-wrap: wrap; }
+.arrow{ padding:8px 12px; background:rgba(255,255,255,0.05); border-radius:8px; cursor:pointer; user-select:none; }
+.social-slider{ flex:1; min-width:0; max-width:460px; overflow:hidden; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 50px, black calc(100% - 50px), transparent 100%); mask-image:linear-gradient(to right, transparent 0%, black 50px, black calc(100% - 50px), transparent 100%); }
+.social-inner{ display:flex; gap:12px; transition:transform .3s ease; }
+.social-item{ min-width:120px; padding:10px 14px; border-radius:999px; background:var(--card); border:1px solid var(--card); text-align:center; color:var(--accent); font-weight:600; text-decoration:none; transition:all .25s; }
+.social-item:hover{ background:var(--accent); color:#041617; }
+.skills-wrap h3{ margin-bottom:10px; }
+.skills{ display:flex; flex-wrap:wrap; gap:10px; }
+.skill{ padding:8px 14px; border-radius:999px; background:var(--card); border:1px solid var(--card); color:var(--accent); font-weight:600; }
+.full-tabs{ margin-top:28px; }
+.tabs{ display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap; }
+.tab{ padding:10px 16px; border-radius:10px; background:var(--card); cursor:pointer; color:var(--muted); border:1px solid transparent; transition:.25s; }
+.tab.active{ background:var(--accent); color:#031617; border-color:var(--accent-2); }
+.tab-pane{ display:none; }
+.tab-pane.active{ display:block; }
+.exp-item{ display:flex; gap:16px; padding:14px 0; border-bottom:1px solid var(--card); }
+.exp-logo{ width:60px; height:60px; border-radius:10px; background:var(--card); display:flex; align-items:center; justify-content:center; object-fit:cover; }
+.exp-body h4{ margin-bottom:6px; }
+.exp-body .meta{ margin-bottom:8px; color:var(--muted); }
+.exp-desc{ color:var(--muted); line-height:1.6; margin-bottom:12px; }
+footer{ text-align:center; margin:26px 0; color:var(--muted); font-size:13px; }
+@media(min-width:1024px){ .skills-wrap{ max-width:370px; justify-self:end; }
+.status{ bottom: -108px; right: 32px; }
+}
+@media(max-width:900px){ .wrap{ margin:24px auto; padding:0 18px; }
+header{ flex-direction:row; gap:16px; text-align:center; margin-bottom:22px; }
+.logo{ justify-content:center; }
+nav{ justify-content:center; flex-wrap:wrap; }
+.top{ grid-template-columns:1fr; gap:18px; }
+.card{ padding:22px; min-width: 544px; }
+.profile{ flex-direction:column; align-items:center; text-align:center; }
+.pfp{ width:120px; height:120px; }
+.personal h2{ font-size:20px; }
+.personal .lead{ font-size:14px; justify-self: center; max-width: 80%; }
+.meta{ font-size:13px; }
+.social-row{ width:100%; justify-content: center; gap:8px; }
+.arrow{ align-self:flex-end; }
+.social-slider{ max-width:80%; }
+.skills-wrap{ max-width:100%; }
+.skills{ justify-content:center; }
+.exp-item{ flex-direction:column; align-items:center; text-align:center; }
+.exp-desc{ text-align:left; }
+.status{ bottom: 32px; right: -42px; }
+}
+@media (min-width: 601px) and (max-width: 680px) { .social-row { width: 85% !important; margin-left: auto !important; margin-right: auto !important; justify-content: center !important; }
+}
+@media(max-width:600px){ .wrap{ padding:0 14px; }
+.pfp{ width:110px; height:110px; }
+.personal h2{ font-size:18px; }
+.personal .lead{ font-size:13px; }
+.social-item{ min-width:90px; font-size:12px; padding:7px 9px; }
+.tabs{ gap:6px; }
+.tab{ padding:8px 10px; font-size:13px; }
+.exp-body h4{ font-size:16px; }
+.blob1{width:580px;height:580px;top:-260px;left:-260px}
+.blob2{width:480px;height:480px;bottom:-220px;right:-260px}
+.blob3{width:380px;height:380px;top:32%;right:0}
+.status{ bottom: 32px; right: -37px; }
+}
+.status{ transition:transform .3s ease; width:32px; height:32px; position:relative; background:#747f8d; float:right; border:5px solid var(--card); border-radius:50% 0%; }
+.discordprofile{ transition:transform .3s ease; width:410px; height:210px; border-radius:10px; opacity:0; visibility:hidden; border:0; position:relative; bottom:55px; left:30px; z-index:1; -webkit-box-shadow:20px 20px 22px rgba(0,0,0,.2); box-shadow:20px 20px 22px rgba(0,0,0,.2); }
+.status:hover .discordprofile{ opacity:1; visibility:visible; bottom:105px; }
+::-webkit-scrollbar{ width:8px; background:linear-gradient(180deg,var(--bg),var(--accent-2),var(--bg)); }
+::-webkit-scrollbar-thumb{ border:1px solid var(--card); background:var(--accent); border-radius:var(--radius); }
+::-webkit-scrollbar-thumb:hover{ background:var(--accent-2); }
+@media (min-width: 1130px) and (max-width: 1219px) { .social-row { min-width: 119% !important; }
+}
+@media (min-width: 975px) and (max-width: 1220px) { .top{ display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px) !important; align-items: start !important; gap: 24px !important; }
+.skills-wrap{ width: 100% !important; max-width: 340px !important; min-height: 100%; flex-grow: 0 !important; flex-shrink: 0 !important; }
+.top > .card:first-child{ width: 100% !important; min-width: 0 !important; }
+.profile{ flex-wrap: wrap; }
+.personal{ max-width: 65%; }
+.social-slider{ font-size: 12.7px !important; max-width: 100% !important; min-width: 0 !important; }
+.social-row{ min-width: 107%; }
+.social-item{ min-width: 90px !important; }
+.pfp{ width: 120px !important; height: 120px !important; }
+.status{ top: 87px; right: 34px; }
+}
+@media (min-width: 900px) and (max-width: 975px){ .top{ grid-template-columns: 1fr !important; gap: 24px !important; }
+.skills-wrap{ max-width: 100% !important; width: 100% !important; }
+.top > .card:first-child{ width: 100% !important; }
+.profile{ flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 16px !important; }
+.social-row{ justify-content: center !important; }
+.social-slider{ max-width: 100% !important; }
+.status{ margin-bottom: -45px; bottom: 48px; left: 52px; }
+}
+  </style>
+</head>
+<body>
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="mark"><img src="\Users\frudotz\Desktop\frudotz.svg" alt="icon" style="padding: 6.75px;"></div>
+        <div>
+          <div style="font-weight:700">H. Arda Karabacak - @frudotz</div>
+          <div style="font-size:13px;color:var(--muted)">Grafik Tasarım · Reklam · Ağ & Sistem</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#sections">Deneyim</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </header>
+
+    <div class="top">
+      <div class="card">
+        <div class="profile">
+          <img src="https://avatars.githubusercontent.com/u/46935560" alt="Profil" class="pfp" />
+          <div class="status" id="status"><iframe src="https://lanyard.cnrad.dev/api/460867393141342218" class="discordprofile" id="discordprofile" width="410" height="210"></iframe></div>
+          <div class="personal">
+            <h2>H. Arda Karabacak — Grafik & Ağ Uzmanı</h2>
+            <div class="lead">Grafik tasarım, reklam ve ağ sistemleri üzerinde çalışan, pratik çözümler üreten ve projelerini ölçeklendirmeyi seven bir profesyonelim.</div>
+            <div class="meta">İstanbul, Türkiye · frudotz@gmail.com</div>
+
+            <div class="social-row">
+              <div class="arrow" id="leftArrow">◀</div>
+              <div class="social-slider">
+                <div class="social-inner" id="socialInner">
+                  <a href="instagram" target="_blank" class="social-item">Instagram</a>
+                  <a href="twitter" target="_blank" class="social-item">X / Twitter</a>
+                  <a href="linkedin" target="_blank" class="social-item">LinkedIn</a>
+                  <a href="github" target="_blank" class="social-item">GitHub</a>
+                  <a href="behance" target="_blank" class="social-item">Behance</a>
+                </div>
+              </div>
+              <div class="arrow" id="rightArrow">▶</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card skills-wrap">
+        <h3>Öne Çıkan Yetenekler</h3>
+        <div class="skills">
+          <div class="skill">#GrafikTasarım</div>
+          <div class="skill">#SosyalMedya</div>
+          <div class="skill">#AğYönetimi</div>
+          <div class="skill">#SistemYönetimi</div>
+          <div class="skill">#Web</div>
+          <div class="skill">#Frontend</div>
+          <div class="skill">#Reklam</div>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="full-tabs card" id="sections">
+      <div class="tabs">
+        <div class="tab active" data-tab="exp">Deneyim</div>
+        <div class="tab" data-tab="edu">Eğitim</div>
+        <div class="tab" data-tab="cert">Sertifikalar</div>
+      </div>
+
+      <div class="tab-pane active" id="exp">
+        <div class="exp-item">
+          <img src="https://gibir.net.tr/social.png" class="exp-logo"></img>
+          <div class="exp-body">
+            <h4>GIBIRNet - Reklam Uzmanı</h4>
+            <div class="meta">Şubat 2021 — Günümüz · Uzaktan Çalışma</div>
+            <div class="exp-desc">GIBIRNet bünyesinde reklam faaliyetleri yürütmekle birlikte kullanıcı topluluklarının idaresi görevini üstleniyorum.<br>Daha önce grafik tasarım alanında da görev aldım. Bu süreçte "İnternetin Süper Gücü" sloganını oluşturarak marka değerine katkıda bulundum.
+            </div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <img src="https://adilinternet.org/img/iOG-Logo.svg" class="exp-logo" style="background-color: white;padding: 6px;"></img>
+          <div class="exp-body">
+            <h4>İnternet Özgürlüğü Girişimi - Grafik İşleri ve Sosyal Medya Yöneticisi</h4>
+            <div class="meta">Ağustos 2025 — Günümüz · Gönüllü Çalışma</div>
+            <div class="exp-desc">Türkiye için adil, özgür ve erişilebilir internet ana fikrinden yola çıkarak İnternet Özgürlüğü Girişimi çevresinde buluştuk ve adilinternet.org üzerinden ilk kampanyamızı duyurduk. Kampanyamız ikinci haftasını doldurmadan 10.000 imzayı geride bıraktı! Girişimin ve girişim bünyesindeki kampanyalarımızın grafik tasarım işleriyle birlikte sosyal medyayla ilgili işlerini üstlenmekteyim.
+            </div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <img src="https://avatars.githubusercontent.com/u/108979112?s=200&v=4" class="exp-logo"></img>
+          <div class="exp-body">
+            <h4>Nraphy - Grafik Tasarımcı</h4>
+            <div class="meta">Haz 2021 — Nis 2024 · Gönüllü Çalışma</div>
+            <div class="exp-desc">Nraphy'nin başta logosu olmak üzere genel tasarım düzenini yeniledim ve web sitesinin temellerini attım.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="edu">
+        <div class="exp-item">
+          <img src="https://www.istinye.edu.tr/sites/default/files/2025-07/isu_logo_tr-1.svg" class="exp-logo" style="object-fit: contain;padding: 5px;background: #0379a8;"></img>
+          <div class="exp-body">
+            <h4>İstinye Üniversitesi — Önlisans — Bilişim Güvenliği Teknolojisi</h4>
+            <div class="meta">Eylül 2025 - Haziran 2027 (Beklenen)</div>
+            <div class="exp-desc">Mezuniyetim dahilinde, profesyonel hayatımda BT Teknikeri (IT Specialist) ünvanıyla siber güvenlik, bilgi işlem ve giriş seviyesi yazılım kazanımları neticesinde uygun pozisyonlarda görev alabilirim.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <img src="https://aolweb.meb.gov.tr/images/meblogo.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+          <div class="exp-body">
+            <h4>Açık Öğretim Lisesi — 4 Yıllık, Alan Yok - 2</h4>
+            <div class="meta">Eylül 2022 - Nisan 2024</div>
+            <div class="exp-desc">Not: 78,29</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="cert">
+        <div class="exp-item">
+    <img src="https://cdn.teknofest.org/media/upload/userFormUpload/t3-logo-TR-01_wnoJj_1_5TSjS.png" class="exp-logo" style="padding: 5px;background: white;filter: grayscale(1);"></img>
+    <div class="exp-body">
+        <h4>SiberVatan AyaküstüCTF - Katılım Sertifikası</h4>
+        <div class="meta">TEKNOFEST | Yayınlanma: Mayıs 2023</div>
+        <div class="exp-desc">Yetenekler: Siber Güvenlik, Bilgi Teknolojisi</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://tryhackme.com/img/favicon.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>CompTIA Pentest+</h4>
+        <div class="meta">TryHackMe | Yayınlanma: Ocak 2023</div>
+        <div class="exp-desc">Yeterlilik Kimliği: THM-WJUQ6NAO5I</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://tryhackme.com/img/favicon.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Complete Beginner</h4>
+        <div class="meta">TryHackMe | Yayınlanma: Ocak 2023</div>
+        <div class="exp-desc">Yeterlilik Kimliği: THM-CBWBCXMSKB</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://assets-btkakademi-gov-tr.akamaized.net/api/service/v1/public/51/assets/dm_logo.png" class="exp-logo" style="padding: 5px;background: #233f7d;object-fit: contain;"></img>
+    <div class="exp-body">
+        <h4>Ağ Temelleri</h4>
+        <div class="meta">BTK Akademi | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: AjaSdmMNmp</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://globalenstitu.com/wp-content/uploads/2017/10/yuvarlaklogo.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Bilgisayar Ağları</h4>
+        <div class="meta">Global Enstitü | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: 315036GE1112821</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://globalenstitu.com/wp-content/uploads/2017/10/yuvarlaklogo.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Dijital Pazarlama</h4>
+        <div class="meta">Global Enstitü | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: 315036GE1112826</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://yt3.googleusercontent.com/hsgGziM35kP-XGvraycAW9JrdA-QYFqncSgWkjuww3clGH5P4ZYr8J9i0kg18_6zOVEZgLLbkA=s900-c-k-c0x00ffffff-no-rj" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Etkili İletişim Teknikleri Eğitimi</h4>
+        <div class="meta">Boensntitü | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: MjQ1MjU4LS0tMTQ1MzkWLSDtZGE0YjkyMzdiYWNjY2RmMTIjMDc2MGNhYjdhZhZWM0YTGzNTkwMTBiMA==</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://assets-btkakademi-gov-tr.akamaized.net/api/service/v1/public/51/assets/dm_logo.png" class="exp-logo" style="padding: 5px;background: #233f7d;object-fit: contain;"></img>
+    <div class="exp-body">
+        <h4>IPV6 Teknoloji Dönüşüm İhtiyaçları ve Çalışmaları</h4>
+        <div class="meta">BTK Akademi | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: 0Kohzxy9j7</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://tryhackme.com/img/favicon.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Introduction to Cyber Security</h4>
+        <div class="meta">TryHackMe | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: THM-OJZD1AE9MM</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://tryhackme.com/img/favicon.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Jr Penetration Tester</h4>
+        <div class="meta">TryHackMe | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: THM-CN2HV2QEZX</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://globalenstitu.com/wp-content/uploads/2017/10/yuvarlaklogo.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Pazarlama ve Satış Teknikleri</h4>
+        <div class="meta">Global Enstitü | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: 315036GE8920</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://tryhackme.com/img/favicon.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Pre Security</h4>
+        <div class="meta">TryHackMe | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: THM-L1DJFPYGLJ</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://tryhackme.com/img/favicon.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Web Fundamentals</h4>
+        <div class="meta">TryHackMe | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: THM-FDTQTLZVK9</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://assets-btkakademi-gov-tr.akamaized.net/api/service/v1/public/51/assets/dm_logo.png" class="exp-logo" style="padding: 5px;background: #233f7d;object-fit: contain;"></img>
+    <div class="exp-body">
+        <h4>İnternet Alan Adları Hukuku</h4>
+        <div class="meta">BTK Akademi | Yayınlanma: Aralık 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: J1HKk2rEY</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://assets-btkakademi-gov-tr.akamaized.net/api/service/v1/public/51/assets/dm_logo.png" class="exp-logo" style="padding: 5px;background: #233f7d;object-fit: contain;"></img>
+    <div class="exp-body">
+        <h4>Bilgi Teknolojilerine Giriş</h4>
+        <div class="meta">BTK Akademi | Yayınlanma: Kasım 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: MAZUNxPKdj</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" class="exp-logo"></img>
+    <div class="exp-body">
+        <h4>Practical Cybersecurity for IT Professionals</h4>
+        <div class="meta">LinkedIn | Yayınlanma: Ekim 2022</div>
+        <div class="exp-desc"></div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" class="exp-logo"></img>
+    <div class="exp-body">
+        <h4>Software Architecture: From Developer to Architect</h4>
+        <div class="meta">LinkedIn | Yayınlanma: Ekim 2022</div>
+        <div class="exp-desc"></div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://web.shgm.gov.tr/documents/sivilhavacilik/files/images/logolar/shgm_logo.jpg" class="exp-logo" style="padding: 5px;background: white;object-fit: contain;"></img>
+    <div class="exp-body">
+        <h4>İnsansız Hava Aracı Sportif/Amatör Pilot Sertifikası (İHA - 1 - Sportif / Amatör)</h4>
+        <div class="meta">SHGM / Sivil Havacılık Genel Müdürlüğü | Yayınlanma: Haziran 2022</div>
+        <div class="exp-desc">Yeterlilik Kimliği: TR-İHA1H9980903</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png" class="exp-logo" style="padding: 5px;background: #07172c;object-fit: contain;"></img>
+    <div class="exp-body">
+        <h4>Introduction to Cybersecurity</h4>
+        <div class="meta">Cisco Networking Academy | Yayınlanma: Nisan 2022</div>
+        <div class="exp-desc">Yetenekler: Siber Güvenlik</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://www.iienstitu.com/logo-64.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Stratejik İnsan Kaynakları Yönetimi</h4>
+        <div class="meta">İstanbul İşletme Enstitüsü | Verildi: Nisan 2022 - Süresi Bitiyor: Nisan 2029</div>
+        <div class="exp-desc">Yeterlilik Kimliği: 126989710322</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://www.iienstitu.com/logo-64.png" class="exp-logo" style="padding: 5px;background: white;"></img>
+    <div class="exp-body">
+        <h4>Görsel Mağazacılık Eğitimi</h4>
+        <div class="meta">İstanbul İşletme Enstitüsü | Verildi: Nisan 2022 - Süresi Bitiyor: Nisan 2029</div>
+        <div class="exp-desc">Yeterlilik Kimliği: 126989736682</div>
+    </div>
+</div>
+<div class="exp-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png" class="exp-logo" style="padding: 5px;background: #07172c;object-fit: contain;"></img>
+    <div class="exp-body">
+        <h4>Get Connected English</h4>
+        <div class="meta">Cisco Networking Academy | Yayınlanma: Mart 2022</div>
+        <div class="exp-desc"></div>
+    </div>
+</div>
+      </div>
+    </section>
+
+    <footer>&copy; <span id="year"></span> Arda — All rights reserved.</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('.tab').forEach(t=>{
+      t.addEventListener('click',()=>{
+        document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+        t.classList.add('active');
+        document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+        document.getElementById(t.dataset.tab).classList.add('active');
+      });
+    });
+
+const inner = document.getElementById('socialInner');
+const leftArrow = document.getElementById('leftArrow');
+const rightArrow = document.getElementById('rightArrow');
+
+let offset = 0;
+const step = 140;
+
+function getLimits() {
+    const maxOffset = 0;
+    const minOffset = -(inner.scrollWidth - inner.parentElement.clientWidth);
+    return { maxOffset, minOffset };
+}
+
+function updateUI() {
+    const { maxOffset, minOffset } = getLimits();
+
+    if (offset >= maxOffset) {
+        leftArrow.style.opacity = "0.3";
+        leftArrow.style.pointerEvents = "none";
+    } else {
+        leftArrow.style.opacity = "1";
+        leftArrow.style.pointerEvents = "auto";
+    }
+
+    if (offset <= minOffset) {
+        rightArrow.style.opacity = "0.3";
+        rightArrow.style.pointerEvents = "none";
+    } else {
+        rightArrow.style.opacity = "1";
+        rightArrow.style.pointerEvents = "auto";
+    }
+}
+
+rightArrow.onclick = () => {
+    const { minOffset } = getLimits();
+    offset -= step;
+
+    if (offset < minOffset) offset = minOffset;
+
+    inner.style.transform = `translateX(${offset}px)`;
+    updateUI();
+};
+
+leftArrow.onclick = () => {
+    const { maxOffset } = getLimits();
+    offset += step;
+
+    if (offset > maxOffset) offset = maxOffset;
+
+    inner.style.transform = `translateX(${offset}px)`;
+    updateUI();
+};
+
+updateUI();
+
+
+const OPCODES = {
+    INFO: 0,
+    HELLO: 1,
+    INIT: 2,
+    HEARTBEAT: 3,
+};
+const elements = {
+    status: document.getElementById("status")
+};
+const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
+lanyard.onopen = () => {
+    lanyard.send(
+        JSON.stringify({
+            op: OPCODES.INIT,
+            d: {
+                subscribe_to_id: "460867393141342218",
+            },
+        })
+    );
+};
+lanyard.onmessage = ({ data }) => {
+    const parsedData = JSON.parse(data);
+    const root = document.documentElement;
+    if (parsedData.op === OPCODES.HELLO) {
+        setInterval(() => {
+            lanyard.send(
+                JSON.stringify({
+                    op: OPCODES.HEARTBEAT,
+                })
+            );
+        }, parsedData.d.heartbeat_interval);
+    } else if (parsedData.op === OPCODES.INFO) {
+        const statusColors = {
+            online: "#14d1c8",
+            offline: "#a9a9a9",
+            idle: "#ffdb58",
+            dnd: "#dc143c",
+        };
+        const statusColors2 = {
+            online: "#0fb9aa",
+            offline: "#696969",
+            idle: "#f0c000",
+            dnd: "#b20000",
+        };
+        if (parsedData.t === "INIT_STATE") {
+            const user = parsedData.d;
+            elements.status.style.background = statusColors[user.discord_status];
+            elements.status.style.background = statusColors[user.discord_status];
+            root.style.setProperty('--accent', statusColors[user.discord_status]);
+            root.style.setProperty('--accent-2', statusColors2[user.discord_status]);
+        } else if (parsedData.t === "PRESENCE_UPDATE") {
+            const user = parsedData.d;
+            elements.status.style.background = statusColors[user.discord_status];
+            root.style.setProperty('--accent', statusColors[user.discord_status]);
+            root.style.setProperty('--accent-2', statusColors2[user.discord_status]);
+        }
+    }
+};
+lanyard.onclose = (event) => {
+    console.log(`WebSocket connection closed: ${event.reason}`);
+};
+  </script>
+</body>
+</html>
